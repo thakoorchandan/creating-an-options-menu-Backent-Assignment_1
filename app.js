@@ -13,7 +13,7 @@ input.prompt();
 
 input.on("line", (number) => {
 	if (number == 1) {
-		console.log(books);
+		console.table(books);
 	}
 	else if (number == 2) {
 		input.question("Please enter the name of book\n", (name) => {
@@ -32,7 +32,6 @@ input.on("line", (number) => {
 	} else {
 		console.log(`You have selected an invalid entry so please press 1, 2 or 3\n`);
 	}
-	input.prompt();
 })
 
 
